@@ -1,0 +1,19 @@
+#include <iostream>  
+
+int main() {  
+    float wzrost, waga;
+
+    std::cout << "Podaj swoj wzrost: " << std::endl;
+    std::cin >> wzrost;
+
+    std::cout << "Podaj swoja wage: " << std::endl;
+    std::cin >> waga;
+
+    std::cout << "Twoje BMI to: " << BMI(wzrost, waga) << std::endl;
+
+    return 0;
+}
+
+double BMI(float wzost, float waga) {
+    return waga / (wzrost * wzrost);
+}
